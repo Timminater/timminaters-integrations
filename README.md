@@ -13,7 +13,7 @@ die per tijdslot de hoogste waarde van de geconfigureerde providers gebruikt.
 
 | Eigenschap | Waarde |
 |---|---|
-| Versie | 0.2.0 (experimenteel) |
+| Versie | [![Nieuwste release](https://img.shields.io/github/v/release/Timminater/neerslag-radar?label=nieuwste%20versie)](https://github.com/Timminater/neerslag-radar/releases/latest) (experimenteel) |
 | Home Assistant | 2026.6 of nieuwer |
 | Repository | [Timminater/neerslag-radar](https://github.com/Timminater/neerslag-radar) |
 | Installatie | Custom HACS-repository, categorie **Integration** |
