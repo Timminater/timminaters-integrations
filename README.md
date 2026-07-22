@@ -1,36 +1,46 @@
 # Timminater's Home Assistant integrations
 
-Deze repository is de centrale ontwikkelmap en catalogus voor mijn Home Assistant-
-integraties. Iedere integratie staat onder `integrations/` als een volledig zelfstandige
-repositorystructuur, zodat deze afzonderlijk voor HACS gepubliceerd kan worden.
+Deze repository is de centrale catalogus voor mijn Home Assistant-integraties. Iedere
+integratie is gekoppeld als Git-submodule en wordt ontwikkeld, getest en gepubliceerd
+vanuit een eigen primaire repository.
 
 ## Integraties
 
 | Integratie | Status | Providers | Broncode |
 |---|---|---|---|
-| Neerslag Radar | 0.1.0, experimenteel | Buienradar, Buienalarm, KNMI en Open-Meteo | [Open map](integrations/neerslag-radar/) |
+| Neerslag Radar | 0.1.0, experimenteel | Buienradar, Buienalarm, KNMI en Open-Meteo | [Broncode](https://github.com/Timminater/neerslag-radar) |
 
 ## Repository-indeling
 
 ```text
 timminaters-integrations/
 ├── README.md
-└── integrations/
-    └── neerslag-radar/
-        ├── custom_components/neerslag_radar/
-        ├── tests/
-        ├── hacs.json
-        └── README.md
+├── .gitmodules
+└── neerslag-radar/ → https://github.com/Timminater/neerslag-radar
 ```
 
-De hoofdrepository bewaart alle integraties en hun geschiedenis. Voor publicatie als
-zelfstandige HACS-repository kan een integratiemap met Git subtree worden gesplitst:
+## Catalogus clonen
 
 ```shell
-git subtree split --prefix integrations/neerslag-radar -b release/neerslag-radar
-git push neerslag-radar release/neerslag-radar:main
+git clone --recurse-submodules https://github.com/Timminater/timminaters-integrations.git
 ```
 
-De remote `neerslag-radar` moet daarbij verwijzen naar de afzonderlijke GitHub-
-repository voor die integratie. Hierdoor blijft deze catalogus compleet, terwijl iedere
-HACS-repository de vereiste integratiebestanden op het repository-rootniveau heeft.
+Na een clone zonder submodules kunnen ze alsnog worden opgehaald met:
+
+```shell
+git submodule update --init --recursive
+```
+
+## Integraties bijwerken
+
+Wijzigingen worden eerst gecommit en gepusht in de primaire integratierepository. Werk
+daarna de verwijzing in deze catalogus bij en commit de gewijzigde submodulepointer:
+
+```shell
+git submodule update --remote neerslag-radar
+git add neerslag-radar
+git commit -m "Update Neerslag Radar"
+```
+
+Neerslag Radar kan rechtstreeks als custom HACS-repository worden toegevoegd via
+`https://github.com/Timminater/neerslag-radar` met type **Integration**.

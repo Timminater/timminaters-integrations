@@ -1,0 +1,4 @@
+[submodule "neerslag-radar"]
+	path = neerslag-radar
+	url = https://github.com/Timminater/neerslag-radar.git
+	branch = main
