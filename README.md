@@ -8,7 +8,7 @@ vanuit een eigen primaire repository.
 
 | Integratie | Status | Providers | Broncode |
 |---|---|---|---|
-| Neerslag Radar | 0.1.0, experimenteel | Buienradar, Buienalarm, KNMI en Open-Meteo | [Broncode](https://github.com/Timminater/neerslag-radar) |
+| Neerslag Radar | 0.2.0, experimenteel | Buienradar, Buienalarm, KNMI, Open-Meteo en Global | [Broncode](https://github.com/Timminater/neerslag-radar) |
 
 ## Repository-indeling
 
