@@ -2,3 +2,7 @@
 	path = neerslag-radar
 	url = https://github.com/Timminater/neerslag-radar.git
 	branch = main
+[submodule "neerslag-radar-card"]
+	path = neerslag-radar-card
+	url = https://github.com/Timminater/neerslag-radar-card.git
+	branch = main
