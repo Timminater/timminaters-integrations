@@ -1,11 +1,14 @@
 # Timminater's Home Assistant integrations
 
 Een catalogus met custom integraties voor Home Assistant. Elke integratie heeft een
-eigen GitHub-repository en kan afzonderlijk via HACS worden geïnstalleerd.
+eigen GitHub-repository en kan afzonderlijk via HACS worden geïnstalleerd. Bij elke
+regeling staat een HACS-knop die de repository rechtstreeks in HACS opent.
 
 ## Beschikbare integraties
 
 ### Neerslag Radar
+
+[![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Timminater&repository=neerslag-radar&category=integration)
 
 Neerslagverwachtingen voor een ingestelde locatie, afkomstig van Buienradar,
 Buienalarm, KNMI en Open-Meteo. De integratie bevat daarnaast een Global-prognose
@@ -34,6 +37,8 @@ Raadpleeg voor configuratie, providers en bekende beperkingen de
 
 ### Neerslag Radar Card
 
+[![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Timminater&repository=neerslag-radar-card&category=plugin)
+
 Een compacte Lovelace-kaart die de neerslagverwachtingen van Buienradar,
 Buienalarm, KNMI en Open-Meteo als afzonderlijke blauwe lijnen vergelijkt. De
 kaart gebruikt automatisch de locaties en providers van Neerslag Radar en laat
@@ -57,6 +62,36 @@ de berekende Global-prognose weg.
 
 Bij één Neerslag Radar-locatie selecteert de kaart deze automatisch. Bij meerdere
 locaties verschijnt een keuzelijst in de kaarteditor.
+
+### Energieprijs Voorspelling Card
+
+[![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Timminater&repository=Energieprijs_voorspelling_card&category=plugin)
+
+Eén grafiek met de vaste Zonneplan day-ahead-uurtarieven (volle balken) en de
+uurprognose van Stroomvoorspeller (gearceerde balken met bandbreedte), inclusief
+overzichtsvakjes en een zoeker voor het goedkoopste aaneengesloten blok van N uur.
+
+| Eigenschap | Waarde |
+|---|---|
+| Versie | [![Nieuwste release](https://img.shields.io/github/v/release/Timminater/Energieprijs_voorspelling_card?label=nieuwste%20versie)](https://github.com/Timminater/Energieprijs_voorspelling_card/releases/latest) |
+| Vereist | Zonneplan-integratie; voorspelling is optioneel via één REST-sensor |
+| Repository | [Timminater/Energieprijs_voorspelling_card](https://github.com/Timminater/Energieprijs_voorspelling_card) |
+| Installatie | Custom HACS-repository, categorie **Dashboard** |
+
+#### Kaart installeren via HACS
+
+1. Open HACS en kies rechtsboven **Custom repositories**.
+2. Voeg `https://github.com/Timminater/Energieprijs_voorspelling_card` toe met
+   categorie **Dashboard**.
+3. Zoek naar **Zonneplan Prijskaart** en installeer de kaart.
+4. Zorg voor de twee sensoren: de tariefsensor van de HACS-integratie
+   **Zonneplan** en (optioneel) de Stroomvoorspeller-uurprognose via één REST-sensor
+   op `https://stroomvoorspeller.nl/data/forecast.json`; een klaar-om-te-kopiëren
+   `rest.yaml`-voorbeeld staat in de repository.
+5. Vernieuw de browser en voeg de kaart via de visuele dashboardeditor toe.
+
+Zie de [README van de kaart](https://github.com/Timminater/Energieprijs_voorspelling_card#readme)
+voor alle opties en het gegevenscontract.
 
 ## Over deze catalogus
 
@@ -89,13 +124,14 @@ timminaters-integrations/
 |-- README.md
 |-- .gitmodules
 |-- neerslag-radar/ -> https://github.com/Timminater/neerslag-radar
-`-- neerslag-radar-card/ -> https://github.com/Timminater/neerslag-radar-card
+|-- neerslag-radar-card/ -> https://github.com/Timminater/neerslag-radar-card
+`-- energieprijs-voorspelling-card/ -> https://github.com/Timminater/Energieprijs_voorspelling_card
 ```
 
 ## Problemen en bijdragen
 
-Open een issue of pull request in de repository van de betreffende integratie. Voor
-Neerslag Radar kan dat via
-[Timminater/neerslag-radar](https://github.com/Timminater/neerslag-radar) en voor
-de kaart via
-[Timminater/neerslag-radar-card](https://github.com/Timminater/neerslag-radar-card).
+Open een issue of pull request in de repository van de betreffende integratie:
+
+- Neerslag Radar: [Timminater/neerslag-radar](https://github.com/Timminater/neerslag-radar)
+- Neerslag Radar Card: [Timminater/neerslag-radar-card](https://github.com/Timminater/neerslag-radar-card)
+- Energieprijs Voorspelling Card: [Timminater/Energieprijs_voorspelling_card](https://github.com/Timminater/Energieprijs_voorspelling_card)

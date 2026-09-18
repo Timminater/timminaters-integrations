@@ -6,3 +6,7 @@
 	path = neerslag-radar-card
 	url = https://github.com/Timminater/neerslag-radar-card.git
 	branch = main
+[submodule "energieprijs-voorspelling-card"]
+	path = energieprijs-voorspelling-card
+	url = https://github.com/Timminater/Energieprijs_voorspelling_card.git
+	branch = main
