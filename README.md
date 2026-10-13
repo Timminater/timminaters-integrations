@@ -6,6 +6,27 @@ regeling staat een HACS-knop die de repository rechtstreeks in HACS opent.
 
 ## Beschikbare integraties
 
+### HouseHeating Modbus
+
+[![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Timminater&repository=househeating-modbus&category=integration)
+
+Experimentele Modbus-integratie voor de HouseHeating HH-C3-12-warmtepomp,
+met monitoring, configuratiescherm en expliciet vrij te geven bediening.
+Gebruikt de gedeelde Modbus-verbinding van Home Assistant.
+
+| Eigenschap | Waarde |
+|---|---|
+| Versie | 0.1.0 (experimenteel; nog niet op hardware getest) |
+| Home Assistant | 2026.10.1 of nieuwer |
+| Repository | [Timminater/househeating-modbus](https://github.com/Timminater/househeating-modbus) |
+| Installatie | Custom HACS-repository, categorie **Integration** |
+
+Voeg de repository als aangepaste integratierepository toe aan HACS, installeer
+**HouseHeating Modbus** en herstart Home Assistant. Voeg de integratie toe via
+**Instellingen > Apparaten & diensten**. Begin met alleen uitlezen en volg de
+[installatiehandleiding](https://github.com/Timminater/househeating-modbus#readme)
+voor verificatie van de temperatuurschalen en het vrijgeven van bediening.
+
 ### Neerslag Radar
 
 [![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Timminater&repository=neerslag-radar&category=integration)
@@ -123,6 +144,7 @@ De huidige indeling is:
 timminaters-integrations/
 |-- README.md
 |-- .gitmodules
+|-- househeating-modbus/ -> https://github.com/Timminater/househeating-modbus
 |-- neerslag-radar/ -> https://github.com/Timminater/neerslag-radar
 |-- neerslag-radar-card/ -> https://github.com/Timminater/neerslag-radar-card
 `-- energieprijs-voorspelling-card/ -> https://github.com/Timminater/Energieprijs_voorspelling_card
@@ -132,6 +154,7 @@ timminaters-integrations/
 
 Open een issue of pull request in de repository van de betreffende integratie:
 
+- HouseHeating Modbus: [Timminater/househeating-modbus](https://github.com/Timminater/househeating-modbus)
 - Neerslag Radar: [Timminater/neerslag-radar](https://github.com/Timminater/neerslag-radar)
 - Neerslag Radar Card: [Timminater/neerslag-radar-card](https://github.com/Timminater/neerslag-radar-card)
 - Energieprijs Voorspelling Card: [Timminater/Energieprijs_voorspelling_card](https://github.com/Timminater/Energieprijs_voorspelling_card)

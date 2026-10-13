@@ -10,3 +10,7 @@
 	path = energieprijs-voorspelling-card
 	url = https://github.com/Timminater/Energieprijs_voorspelling_card.git
 	branch = main
+[submodule "househeating-modbus"]
+	path = househeating-modbus
+	url = https://github.com/Timminater/househeating-modbus.git
+	branch = main
