@@ -11,12 +11,13 @@ regeling staat een HACS-knop die de repository rechtstreeks in HACS opent.
 [![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Timminater&repository=househeating-modbus&category=integration)
 
 Experimentele Modbus-integratie voor de HouseHeating HH-C3-12-warmtepomp,
-met monitoring, thermostaat, warmwaterboiler en expliciet vrij te geven bediening.
+met energie-/rendementsmonitoring, compressorstatistieken, thermostaat, warmwaterboiler
+en een optionele stooklijn met expliciet vrij te geven bediening.
 Gebruikt de gedeelde Modbus-verbinding van Home Assistant.
 
 | Eigenschap | Waarde |
 |---|---|
-| Versie | [0.2.0](https://github.com/Timminater/househeating-modbus/releases/tag/v0.2.0) (experimenteel; nog niet op hardware getest) |
+| Versie | [0.4.0](https://github.com/Timminater/househeating-modbus/releases/tag/v0.4.0) (experimenteel; nog niet op hardware getest) |
 | Home Assistant | 2026.10.1 of nieuwer |
 | Repository | [Timminater/househeating-modbus](https://github.com/Timminater/househeating-modbus) |
 | Installatie | Custom HACS-repository, categorie **Integration** |
