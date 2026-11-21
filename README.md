@@ -39,7 +39,7 @@ AutoNight, werkpunt en start/stop.
 
 | Eigenschap | Waarde |
 |---|---|
-| Versie | `0.3.0-dev.2` (ontwikkelversie, nog niet getest op de ALPHA2 GO K 25-75) |
+| Versie | `0.3.0-dev.3` (ontwikkelversie, nog niet getest op de ALPHA2 GO K 25-75) |
 | Home Assistant | 2026.11.0 of nieuwer |
 | Repository | [Timminater/grundfos-alpha2-go](https://github.com/Timminater/grundfos-alpha2-go) |
 | Installatie | Custom HACS-repository, categorie **Integration** |
