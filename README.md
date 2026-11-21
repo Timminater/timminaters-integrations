@@ -2,7 +2,7 @@
 
 Een catalogus met custom integraties voor Home Assistant. Elke integratie heeft een
 eigen GitHub-repository en kan afzonderlijk via HACS worden geïnstalleerd. Bij elke
-regeling staat een HACS-knop die de repository rechtstreeks in HACS opent.
+integratie staat een HACS-knop die de repository rechtstreeks in HACS opent.
 
 ## Beschikbare integraties
 
@@ -12,12 +12,12 @@ regeling staat een HACS-knop die de repository rechtstreeks in HACS opent.
 
 Experimentele Modbus-integratie voor de HouseHeating HH-C3-12-warmtepomp,
 met energie-/rendementsmonitoring, compressorstatistieken, thermostaat, warmwaterboiler
-en een optionele stooklijn met expliciet vrij te geven bediening.
+een registerbrowser en een optionele stooklijn met expliciet vrij te geven bediening.
 Gebruikt de gedeelde Modbus-verbinding van Home Assistant.
 
 | Eigenschap | Waarde |
 |---|---|
-| Versie | [0.4.0](https://github.com/Timminater/househeating-modbus/releases/tag/v0.4.0) (experimenteel; nog niet op hardware getest) |
+| Versie | [0.7.0](https://github.com/Timminater/househeating-modbus/releases/tag/v0.7.0) (experimenteel) |
 | Home Assistant | 2026.10.1 of nieuwer |
 | Repository | [Timminater/househeating-modbus](https://github.com/Timminater/househeating-modbus) |
 | Installatie | Custom HACS-repository, categorie **Integration** |
@@ -27,6 +27,25 @@ Voeg de repository als aangepaste integratierepository toe aan HACS, installeer
 **Instellingen > Apparaten & diensten**. Begin met alleen uitlezen en volg de
 [installatiehandleiding](https://github.com/Timminater/househeating-modbus#readme)
 voor verificatie van de temperatuurschalen en het vrijgeven van bediening.
+
+### Grundfos ALPHA2 GO
+
+[![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Timminater&repository=grundfos-alpha2-go&category=integration)
+
+Lokale Bluetooth-integratie voor de Grundfos ALPHA2 GO-circulatiepomp via een
+actieve ESPHome Bluetooth-proxy. Leest onder meer debiet, opvoerhoogte, toerental
+en vermogen uit. Optionele bediening omvat regelmodi, setpoints, debietbegrenzers,
+AutoNight, werkpunt en start/stop.
+
+| Eigenschap | Waarde |
+|---|---|
+| Versie | `0.3.0-dev.2` (ontwikkelversie, nog niet getest op de ALPHA2 GO K 25-75) |
+| Home Assistant | 2026.11.0 of nieuwer |
+| Repository | [Timminater/grundfos-alpha2-go](https://github.com/Timminater/grundfos-alpha2-go) |
+| Installatie | Custom HACS-repository, categorie **Integration** |
+
+Volg de [installatiehandleiding](https://github.com/Timminater/grundfos-alpha2-go#readme)
+voor installatie en Bluetooth-koppeling. De integratie start in uitleesmodus.
 
 ### Neerslag Radar
 
@@ -146,6 +165,7 @@ timminaters-integrations/
 |-- README.md
 |-- .gitmodules
 |-- househeating-modbus/ -> https://github.com/Timminater/househeating-modbus
+|-- grundfos-alpha2-go/ -> https://github.com/Timminater/grundfos-alpha2-go
 |-- neerslag-radar/ -> https://github.com/Timminater/neerslag-radar
 |-- neerslag-radar-card/ -> https://github.com/Timminater/neerslag-radar-card
 `-- energieprijs-voorspelling-card/ -> https://github.com/Timminater/Energieprijs_voorspelling_card
@@ -156,6 +176,7 @@ timminaters-integrations/
 Open een issue of pull request in de repository van de betreffende integratie:
 
 - HouseHeating Modbus: [Timminater/househeating-modbus](https://github.com/Timminater/househeating-modbus)
+- Grundfos ALPHA2 GO: [Timminater/grundfos-alpha2-go](https://github.com/Timminater/grundfos-alpha2-go)
 - Neerslag Radar: [Timminater/neerslag-radar](https://github.com/Timminater/neerslag-radar)
 - Neerslag Radar Card: [Timminater/neerslag-radar-card](https://github.com/Timminater/neerslag-radar-card)
 - Energieprijs Voorspelling Card: [Timminater/Energieprijs_voorspelling_card](https://github.com/Timminater/Energieprijs_voorspelling_card)

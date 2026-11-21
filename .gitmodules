@@ -14,3 +14,7 @@
 	path = househeating-modbus
 	url = https://github.com/Timminater/househeating-modbus.git
 	branch = main
+[submodule "grundfos-alpha2-go"]
+	path = grundfos-alpha2-go
+	url = https://github.com/Timminater/grundfos-alpha2-go.git
+	branch = main
