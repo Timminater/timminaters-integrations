@@ -16,7 +16,7 @@ Bij opnieuw aanmelden vraagt Home Assistant een nieuwe pincode per e-mail aan.
 
 | Eigenschap | Waarde |
 |---|---|
-| Versie | [1.0.1](https://github.com/Timminater/campchef/tree/cb34d3f69f8f71d0176fbb4cc6ccbe8c0d5153b1) |
+| Versie | [1.0.2](https://github.com/Timminater/campchef/tree/8bc933959208126eb65b63bda4dcfe485f9d39d8) |
 | Repository | [Timminater/campchef](https://github.com/Timminater/campchef) |
 | Installatie | Custom HACS-repository, categorie **Integration** |
 
