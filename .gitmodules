@@ -18,3 +18,7 @@
 	path = grundfos-alpha2-go
 	url = https://github.com/Timminater/grundfos-alpha2-go.git
 	branch = main
+[submodule "campchef"]
+	path = campchef
+	url = https://github.com/Timminater/campchef.git
+	branch = main

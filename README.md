@@ -6,6 +6,21 @@ integratie staat een HACS-knop die de repository rechtstreeks in HACS opent.
 
 ## Beschikbare integraties
 
+### CampChef BBQ Grills
+
+[![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Timminater&repository=campchef&category=integration)
+
+Cloudintegratie voor Camp Chef-wifigrills met grillstatus, temperatuur en
+vleessondes. De beschikbare bediening hangt af van het grillmodel.
+Bij opnieuw aanmelden vraagt Home Assistant een nieuwe pincode per e-mail aan.
+
+| Eigenschap | Waarde |
+|---|---|
+| Repository | [Timminater/campchef](https://github.com/Timminater/campchef) |
+| Installatie | Custom HACS-repository, categorie **Integration** |
+
+Zie de [installatiehandleiding](https://github.com/Timminater/campchef#installation).
+
 ### HouseHeating Modbus
 
 [![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Timminater&repository=househeating-modbus&category=integration)
@@ -164,6 +179,7 @@ De huidige indeling is:
 timminaters-integrations/
 |-- README.md
 |-- .gitmodules
+|-- campchef/ -> https://github.com/Timminater/campchef
 |-- househeating-modbus/ -> https://github.com/Timminater/househeating-modbus
 |-- grundfos-alpha2-go/ -> https://github.com/Timminater/grundfos-alpha2-go
 |-- neerslag-radar/ -> https://github.com/Timminater/neerslag-radar
@@ -175,6 +191,7 @@ timminaters-integrations/
 
 Open een issue of pull request in de repository van de betreffende integratie:
 
+- CampChef BBQ Grills: [Timminater/campchef](https://github.com/Timminater/campchef)
 - HouseHeating Modbus: [Timminater/househeating-modbus](https://github.com/Timminater/househeating-modbus)
 - Grundfos ALPHA2 GO: [Timminater/grundfos-alpha2-go](https://github.com/Timminater/grundfos-alpha2-go)
 - Neerslag Radar: [Timminater/neerslag-radar](https://github.com/Timminater/neerslag-radar)
