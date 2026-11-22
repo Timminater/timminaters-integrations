@@ -16,6 +16,7 @@ Bij opnieuw aanmelden vraagt Home Assistant een nieuwe pincode per e-mail aan.
 
 | Eigenschap | Waarde |
 |---|---|
+| Versie | [1.0.1](https://github.com/Timminater/campchef/tree/cb34d3f69f8f71d0176fbb4cc6ccbe8c0d5153b1) |
 | Repository | [Timminater/campchef](https://github.com/Timminater/campchef) |
 | Installatie | Custom HACS-repository, categorie **Integration** |
 
@@ -26,13 +27,15 @@ Zie de [installatiehandleiding](https://github.com/Timminater/campchef#installat
 [![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Timminater&repository=househeating-modbus&category=integration)
 
 Experimentele Modbus-integratie voor de HouseHeating HH-C3-12-warmtepomp,
-met energie-/rendementsmonitoring, compressorstatistieken, thermostaat, warmwaterboiler
-een registerbrowser en een optionele stooklijn met expliciet vrij te geven bediening.
-Gebruikt de gedeelde Modbus-verbinding van Home Assistant.
+met energie- en rendementsmonitoring, compressorstatistieken, thermostaat,
+warmwaterboiler, registerbrowser en een optionele stooklijn. Versie 0.11.0
+voegt 567 uitleessensoren toe die je per stuk kunt inschakelen via de
+registerbrowser of de apparatenpagina. De integratie gebruikt de gedeelde
+Modbus-verbinding van Home Assistant.
 
 | Eigenschap | Waarde |
 |---|---|
-| Versie | [0.7.0](https://github.com/Timminater/househeating-modbus/releases/tag/v0.7.0) (experimenteel) |
+| Versie | [0.11.0](https://github.com/Timminater/househeating-modbus/releases/tag/v0.11.0) (experimenteel) |
 | Home Assistant | 2026.10.1 of nieuwer |
 | Repository | [Timminater/househeating-modbus](https://github.com/Timminater/househeating-modbus) |
 | Installatie | Custom HACS-repository, categorie **Integration** |
@@ -73,7 +76,7 @@ die per tijdslot de hoogste waarde van de geconfigureerde providers gebruikt.
 | Eigenschap | Waarde |
 |---|---|
 | Versie | [![Nieuwste release](https://img.shields.io/github/v/release/Timminater/neerslag-radar?label=nieuwste%20versie)](https://github.com/Timminater/neerslag-radar/releases/latest) (experimenteel) |
-| Home Assistant | 2026.6 of nieuwer |
+| Home Assistant | 2026.6.0 of nieuwer |
 | Repository | [Timminater/neerslag-radar](https://github.com/Timminater/neerslag-radar) |
 | Installatie | Custom HACS-repository, categorie **Integration** |
 
@@ -103,7 +106,7 @@ de berekende Global-prognose weg.
 | Eigenschap | Waarde |
 |---|---|
 | Versie | [![Nieuwste release](https://img.shields.io/github/v/release/Timminater/neerslag-radar-card?label=nieuwste%20versie)](https://github.com/Timminater/neerslag-radar-card/releases/latest) |
-| Vereist | Neerslag Radar 0.3.0 of nieuwer |
+| Vereist | Home Assistant 2026.6.0 en Neerslag Radar 0.3.0 of nieuwer |
 | Repository | [Timminater/neerslag-radar-card](https://github.com/Timminater/neerslag-radar-card) |
 | Installatie | Custom HACS-repository, categorie **Dashboard** |
 
@@ -130,7 +133,8 @@ overzichtsvakjes en een zoeker voor het goedkoopste aaneengesloten blok van N uu
 | Eigenschap | Waarde |
 |---|---|
 | Versie | [![Nieuwste release](https://img.shields.io/github/v/release/Timminater/Energieprijs_voorspelling_card?label=nieuwste%20versie)](https://github.com/Timminater/Energieprijs_voorspelling_card/releases/latest) |
-| Vereist | Zonneplan-integratie; voorspelling is optioneel via één REST-sensor |
+| Home Assistant | 2024.6.0 of nieuwer |
+| Vereist | Zonneplan-integratie. De voorspelling is optioneel via één REST-sensor. |
 | Repository | [Timminater/Energieprijs_voorspelling_card](https://github.com/Timminater/Energieprijs_voorspelling_card) |
 | Installatie | Custom HACS-repository, categorie **Dashboard** |
 
